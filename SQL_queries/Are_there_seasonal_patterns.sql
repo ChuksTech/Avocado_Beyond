@@ -11,3 +11,4 @@ GROUP BY
     TO_CHAR(date, 'Month'), EXTRACT(MONTH FROM date)
 ORDER BY
     EXTRACT(MONTH FROM date);
+

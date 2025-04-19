@@ -31,9 +31,9 @@ ORDER BY
 
 SELECT
     TO_CHAR(date, 'YYYY-MM') AS month,
-    ROUND(AVG("AveragePrice"), 2) AS average_price
+    ROUND(AVG("averageprice"):: numeric, 2) AS average_price
 FROM
-    avocado
+    avocado_sales
 GROUP BY
     TO_CHAR(date, 'YYYY-MM')
 ORDER BY
